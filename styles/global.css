@@ -21,6 +21,7 @@
 }
 
 body {
+    font-family: var(--font-family);
     color: var(--text-color-primary);
     background-color: var(--bg-color);
 }
@@ -34,4 +35,16 @@ a:hover {
 }
 h1, h2, h3 {
     font: inherit;
+}
+.container {
+    max-width: 1280px;
+    padding-inline: 32px;
+    margin-inline: auto;
+}
+img {
+    max-width: 100%;
+}
+
+main {
+    margin-top: 40px;
 }
