@@ -1,3 +1,21 @@
+section header {
+    border-top: 1px solid var(--stroke-color);
+    padding-block: 12px 24px;
+    font: var(--h3);
+    a {
+        justify-self: end;
+        align-items: center;
+        gap: 4px;
+        span {
+            height: 16px;
+            width: 16px;
+            background-image: url(../assets/icons/ArrowRight.svg);
+        }
+        &:hover span {
+            background-image: url(../assets/icons/ArrowRightHover.svg);
+        }
+    }
+}
 #featured {
     img {
         height: 100%;
@@ -32,4 +50,26 @@
             margin-top: 8px;
         }
     }
+}
+#weekly {
+    & > div {
+        grid-template-columns: repeat(4, 292px);
+    }
+    img {
+        max-height: 160px;
+    }
+    figure {
+        position: relative;
+
+        .content-tag {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        }
+        p {
+            margin-top: 8px;
+            font-weight: 800;
+        }
+    }
+
 }
